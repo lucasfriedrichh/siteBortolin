@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bortolin Consultoria</title>
     <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 
     <!-- Line awesome -->
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
@@ -21,11 +21,9 @@
             <a class="navbar-brand" href="#"><img src="assets/images/logoBortolin-semfundo.png" alt="Seu Logo"></a>
             <ul class="nav-links">
                 <li class="active"><a href="#hero">Home</a></li>
-                <li><a href="#services">Services</a></li>
                 <li><a href="#work">Work</a></li>
-            </ul>
-            <li class="nav-links"><a href="#contact">Contact</a></li>
-            </div>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -37,83 +35,40 @@
 
     <!-- Hero -->
     <div id="hero">
-        <div class="container">
+        <div class="container" data-aos="fade-down" data-aos-delay="100000">
             <h1 class="heading-xl"><span id="hero-titles"></span></h1>
-            <a href="#services" class="scroll-to-down"><i class="las la-arrow-down"></i></a>
+            <a href="#work" class="scroll-to-down"><i class="las la-arrow-down"></i></a>
         </div>
     </div>
     <!-- //Hero -->
 
-    <!-- Services -->
-    <section id="services">
-        <div class="container">
-            <div class="section-intro" data-aos="fade-up">
-                <h1 class="heading-2" >Consultoria</h1>
-                <p>São necessários basicamente SEIS PASSOS para QUALQUER NEGÓCIO obter sucesso, independente se for uma instituição de pequeno, médio ou grande porte, porém, apesar de parecerem simples eles demandam muito trabalho e organização, assim que eles forem realizados GARANTIMOS que a sua empresa vai SUBIR DE PATAMAR, tanto em lucratividade, quanto em dinheiro em caixa e patrimônio!</p>
-            </div>
-            <div class="grid three-col-grid">
-                <div class="service" data-aos="fade-up" data-aos-delay="300">
-                    <div class="icon"><i class="las la-tools"></i></div>
-                    <h3 class="heading-3">1 Passo:</h3>
-                    <p>Determinar a estrutura organizacional da instituição e os responsáveis por cada cargo.</p>
-                </div>
-                <div class="service" data-aos="fade-up" data-aos-delay="600">
-                    <div class="icon"><i class="las la-feather"></i></div>
-                    <h3 class="heading-3">2 Passo:</h3>
-                    <p>Planejar e organizar os processos internos da instituição afim de diminuir custos e maximizar os resultados.</p>
-                </div>
-                <div class="service" data-aos="fade-up" data-aos-delay="900">
-                    <div class="icon"><i class="las la-tv"></i></div>
-                    <h3 class="heading-3">3 Passo:</h3>
-                    <p>Estabelecer o controle econômico, demonstração de resultado (lucro/prejuízo) e financeiro, controle de caixa (entradas, saídas e transferências).</p>
-                </div>
-                <div class="service" data-aos="fade-up" data-aos-delay="300">
-                    <div class="icon"><i class="las la-pencil-ruler"></i></div>
-                    <h3 class="heading-3">4 Passo:</h3>
-                    <p>Analisar os indicadores financeiros e estabelecer um planejamento de caixa e de resultado conforme for necessário.</p>
-                </div>
-                <div class="service" data-aos="fade-up" data-aos-delay="600">
-                    <div class="icon"><i class="lab la-gg"></i></div>
-                    <h3 class="heading-3">5 Passo:</h3>
-                    <p>Estabelecer as metas e objetivos a serem alcançados.</p>
-                </div>
-                <div class="service" data-aos="fade-up" data-aos-delay="900">
-                    <div class="icon"><i class="las la-marker"></i></div>
-                    <h3 class="heading-3">6 Passo:</h3>
-                    <p>Alcançar as metas e objetivos almejadas no 5 passo e determinar maiores.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- //Services -->
-
     <div class="line"></div>
     <!-- Work -->
     <section id="work">
-        <div class="container">
-            <div class="section-intro" data-aos="fade-up">
+        <div class="container" data-aos="zoom-in">
+            <div class="section-intro" >
                 <h1 class="heading-2">Nosso Trabalho</h1>
             </div>
             <a class="grid two-col-grid">
-                <div class="project" data-aos="zoom-in" data-aos-delay="300">
+                <div class="project" data-aos-delay="300">
                     <img src="./assets/images/visao.jpg" alt="">
                     <div class="overlay">
                         <div>
                             <h2 class="heading-3">Visão</h2>
-                        <p>Proporcionamos um panorama geral do seu negócio, controle sobre entradas, saídas, receitas e despesas. </p>
+                            <p>Proporcionamos um panorama geral do seu negócio, controle sobre entradas, saídas, receitas e despesas. </p>
                         </div>
                     </div>
                 </div>
-                <div class="project" data-aos="zoom-in" data-aos-delay="600">
+                <div class="project" data-aos-delay="600">
                     <img src="./assets/images/olhandoProjetos.jpg" alt="">
                     <div class="overlay">
                         <div>
                             <h2 class="heading-3">Organização</h2>
-                        <p>Planejamos e aplicamos os melhores processos operacionais e logísticos para o seu negócio. </p>
+                            <p>Planejamos e aplicamos os melhores processos operacionais e logísticos para o seu negócio. </p>
                         </div>
                     </div>
                 </div>
-                <div class="project" data-aos="zoom-in" data-aos-delay="900">
+                <div class="project" data-aos-delay="900">
                     <img src="./assets/images/project-3.jpg" alt="">
                     <div class="overlay">
                         <div>
@@ -122,7 +77,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project" data-aos="zoom-in" data-aos-delay="1100">
+                <div class="project" data-aos-delay="1100">
                     <img src="./assets/images/decole.jpg" alt="">
                     <div class="overlay">
                         <div>
@@ -137,8 +92,66 @@
     <!-- //Work -->
 
     <div class="line"></div>
-    
+    <!-- image -->
+    <section class="bg-image py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center" data-aos="zoom-in">
+              <h1>Contato Inicial (Pré Contratação):</h1>
+              <p>Começamos realizando um DIAGNÓSTICO PRÉVIO identificando os desafios que você está enfrentando no seu negócio através de uma visita na sua empresa, feito o diagnóstico apresentamos um PLANEJAMENTO DE TOMADAS DE DECISÕES E DE AÇÕES INICIAS que devem ser tomadas, priorizamos a transparência no processo desde o primeiro contato.
 
+                Após finalizado o contato inicial, apresentamos um orçamento conforme a demanda que o seu negócio nos apresenta, após acordado o valor do orçamento partimos para a consultoria de fato.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- image -->
+
+    <div class="line"></div>
+     <!-- Services -->
+     <section id="services">
+        <div class="container">
+            <div class="section-intro"  data-aos="fade-down">
+                <h1 class="heading-2" >Consultoria</h1>
+                <p>São necessários basicamente SEIS PASSOS para QUALQUER NEGÓCIO obter sucesso, independente se for uma instituição de pequeno, médio ou grande porte, porém, apesar de parecerem simples eles demandam muito trabalho e organização, assim que eles forem realizados GARANTIMOS que a sua empresa vai SUBIR DE PATAMAR, tanto em lucratividade, quanto em dinheiro em caixa e patrimônio!</p>
+            </div>
+            <div class="grid three-col-grid" data-aos="fade-up">
+                <div class="service" data-aos-delay="500">
+                    <div class="icon"><i class="las la-tools"></i></div>
+                    <h3 class="heading-3">1 Passo:</h3>
+                    <p>Determinar a estrutura organizacional da instituição e os responsáveis por cada cargo.</p>
+                </div>
+                <div class="service" data-aos-delay="1000">
+                    <div class="icon"><i class="las la-feather"></i></div>
+                    <h3 class="heading-3">2 Passo:</h3>
+                    <p>Planejar e organizar os processos internos da instituição afim de diminuir custos e maximizar os resultados.</p>
+                </div>
+                <div class="service" data-aos-delay="1500">
+                    <div class="icon"><i class="las la-tv"></i></div>
+                    <h3 class="heading-3">3 Passo:</h3>
+                    <p>Estabelecer o controle econômico, demonstração de resultado (lucro/prejuízo) e financeiro, controle de caixa (entradas, saídas e transferências).</p>
+                </div>
+                <div class="service" data-aos-delay="2000">
+                    <div class="icon"><i class="las la-pencil-ruler"></i></div>
+                    <h3 class="heading-3">4 Passo:</h3>
+                    <p>Analisar os indicadores financeiros e estabelecer um planejamento de caixa e de resultado conforme for necessário.</p>
+                </div>
+                <div class="service" data-aos-delay="2500">
+                    <div class="icon"><i class="lab la-gg"></i></div>
+                    <h3 class="heading-3">5 Passo:</h3>
+                    <p>Estabelecer as metas e objetivos a serem alcançados.</p>
+                </div>
+                <div class="service" data-aos-delay="3000">
+                    <div class="icon"><i class="las la-marker"></i></div>
+                    <h3 class="heading-3">6 Passo:</h3>
+                    <p>Alcançar as metas e objetivos almejadas no 5 passo e determinar maiores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //Services -->
+
+    <div class="line"></div>
     <!-- Contact -->
     <section id="contact">
         <div class="container">
@@ -193,6 +206,7 @@
                     </form>                      
                 </div>
             </div>
+            <p class="extra_info">TODAS AS SUAS INFORMAÇÕES E AS DO SEU NEGÓCIO SÃO EXTREMAMENTE SIGILOSAS E SÃO MANTIDAS EM SEGURANÇA, PRIORISAMOS O SIGILO CONFORME IMPÕE A ÉTICA PROFISSIONAL!</p>
         </div>
     </section>
     <!-- //Contact -->

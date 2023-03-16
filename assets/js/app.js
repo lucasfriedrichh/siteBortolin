@@ -33,11 +33,12 @@ var options = {
         'Bortolin Consultoria', 
         'Desça pra saber mais'
     ],
-    typeSpeed: 40,
+    typeSpeed: 0.01,
     loop: true,
     loopCount: Infinity,
     typeSpeed: 10,
-    backDelay: 2000,
+    backDelay: 4000,
+    
   };
   
 var typed = new Typed('#hero-titles', options);
