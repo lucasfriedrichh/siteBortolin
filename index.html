@@ -195,10 +195,16 @@
                           <input type="text" class="form-input" name="nome" placeholder="Nome">
                         </div>
                         <div class="form-group">
+                            <input type="text" class="form-input" name="telefone" placeholder="Telefone" data-inputmask="(99) 99999-9999">
+                          </div>
+                        <div class="form-group">
                           <input type="email" class="form-input" name="email" placeholder="E-mail">
                         </div>
                         <div class="form-group">
-                          <textarea name="mensagem" rows="5" class="form-input" placeholder="Mensagem"></textarea>
+                          <textarea name="mensagem" rows="5" class="form-input" placeholder="Conte sobre sua empresa: 
+Nome da empresa,
+Faturamento mensal médio,
+Desafio pelo qual a empresa está passando: aumentar vendas, financeiro apertado, processos internos, logística, pouca lucratividade, outro."></textarea>
                         </div>
                         <div class="form-group">
                           <button type="submit" class="btn">Enviar mensagem</button>
@@ -235,5 +241,6 @@
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6/jquery.inputmask.min.js"></script>
 </body>
 </html>
