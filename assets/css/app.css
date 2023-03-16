@@ -355,52 +355,53 @@ section {
 .project {
     position: relative;
     overflow: hidden;
-}
-
-.project img {
+  }
+  
+  .project img {
     height: 100%;
     object-fit: cover;
     transition: all 0.4s ease-in-out;
-}
-
-
-.project .overlay .heading-3 {
+  }
+  
+  .project .overlay h2 {
     font-size: 25px;
-}
-
-.project .overlay {
+    color: white;
+  }
+  
+  .project .overlay {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 1);
     padding: 44px;
     display: flex;
     align-items: flex-end;
-    transition: all 0.4s ease-in-out;
+    opacity: 0.3;
+    transition: opacity 0.4s ease-in-out;
+    color: #fff; /* adicione esta linha */
+  }
+  
+  .project .overlay p {
+    color: rgba(255, 255, 255, 0.6);
     opacity: 0;
-    
-}
-
-
-.project .overlay h2 {
-    color: white;
-}
-
-.project .overlay p {
-    color: rgba(255,255,255, 0.6);
-}
-
-.project:hover .overlay{
-    opacity: 1;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .project:hover .overlay {
     display: flex;
-}
-
-.project:hover img {
+    opacity: 0.8;
+  }
+  
+  .project:hover .overlay p {
+    opacity: 1;
+  }
+  
+  .project:hover img {
     transform: rotate(15deg) scale(1.5);
-}
-
+  }
+    
 /* Blog */
 #blog {
     background-color: var(--c-light);
