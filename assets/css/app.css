@@ -156,14 +156,14 @@ section {
     box-shadow: 0 2px var(--c-brand);
 }
 
-.nav-links li a {
+.nav-links li a, .nav-links a {
     color: white;
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-.nav-links li a:hover {
+.nav-links li a:hover, .nav-links a:hover {
     color: var(--c-brand);
 }
 
@@ -226,7 +226,7 @@ section {
         justify-content: center;
     }
 
-    .nav-links li a {
+    .nav-links li a{
         color: var(--c-dark);
     }
 
@@ -363,6 +363,11 @@ section {
     transition: all 0.4s ease-in-out;
 }
 
+
+.project .overlay .heading-3 {
+    font-size: 25px;
+}
+
 .project .overlay {
     position: absolute;
     top: 0;
@@ -377,6 +382,7 @@ section {
     opacity: 0;
     
 }
+
 
 .project .overlay h2 {
     color: white;

@@ -17,22 +17,24 @@
 
     <!-- Navbar -->
     <div class="navbar">
-        <div class="container">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
             <a class="navbar-brand" href="#"><img src="assets/images/logoBortolin-semfundo.png" alt="Seu Logo"></a>
             <ul class="nav-links">
                 <li class="active"><a href="#hero">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#work">Work</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
+            <li class="nav-links"><a href="#contact">Contact</a></li>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
             </div>
         </div>
     </div>
-    <!-- //Nvbar -->
+    <!-- //Navbar -->
+
+
     <!-- Hero -->
     <div id="hero">
         <div class="container">
@@ -94,7 +96,7 @@
             </div>
             <a class="grid two-col-grid">
                 <div class="project" data-aos="zoom-in" data-aos-delay="300">
-                    <img src="./assets/images/project-1.jpg" alt="">
+                    <img src="./assets/images/visao.jpg" alt="">
                     <div class="overlay">
                         <div>
                             <h2 class="heading-3">Visão</h2>
@@ -103,7 +105,7 @@
                     </div>
                 </div>
                 <div class="project" data-aos="zoom-in" data-aos-delay="600">
-                    <img src="./assets/images/project-2.jpg" alt="">
+                    <img src="./assets/images/olhandoProjetos.jpg" alt="">
                     <div class="overlay">
                         <div>
                             <h2 class="heading-3">Organização</h2>
@@ -121,7 +123,7 @@
                     </div>
                 </div>
                 <div class="project" data-aos="zoom-in" data-aos-delay="1100">
-                    <img src="./assets/images/project-4.jpg" alt="">
+                    <img src="./assets/images/decole.jpg" alt="">
                     <div class="overlay">
                         <div>
                             <h2 class="heading-3">Decole!</h2>
@@ -153,14 +155,14 @@
                         </ul>
                     </div>
                     <div class="contact-widget">
-                        <h3 class="heading-3">Phone</h3>
+                        <h3 class="heading-3">Telefone</h3>
                         <ul>
                             <li>+55(54)99999-9999</li>
                             <li>+55(54)99999-9999</li>
                         </ul>
                     </div>
                     <div class="contact-widget">
-                        <h3 class="heading-3">Location</h3>
+                        <h3 class="heading-3">Localização</h3>
                         <ul>
                             <li>Passo Fundo, RS, Brasil</li>
                         </ul>
@@ -169,6 +171,11 @@
                 <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
                     <div class="section-intro">
                         <h1 class="heading-2">Entre em Contato</h1>
+                        <div>
+                            <p>Nossa missão é direcionar você e o seu negócio para o caminho certo, sempre em conjunto e com transparência,
+                            esse é o nosso método para proporcionar segurança, tranquilidade e estabilidade para a sua vida,
+                            caso tenha se interessado preencha seus dados abaixo que entraremos em contato!</p>
+                        </div>
                     </div>
                     <form action="enviar_email.php" method="POST">
                         <div class="form-group">
@@ -193,7 +200,11 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>Template Designed by <a href="https://www.youtube.com/channel/UCYMEEnLzGGGIpQQ3Nu_sBsQ">Salman</a></p>
+
+            <div>
+                <p>Created by <a href="#">Lucas Friedrich</a></p>
+                <p>© 2023 Direitos Reservados</p>
+            </div>
             <div class="social-icons">
                 <a href="#"><i class="lab la-twitter"></i></a>
                 <a href="#"><i class="lab la-facebook"></i></a>
