@@ -6,6 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $nome = $_POST['nome'];
   $email = $_POST['email'];
   $mensagem = $_POST['mensagem'];
+  $telefone = $_POST['telefone'];
   
   // Define o destinatário do e-mail
   $destinatario = "frielucas@gmail.com";
@@ -16,6 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Monta o corpo do e-mail
   $corpo = "Nome: $nome\n";
   $corpo .= "E-mail: $email\n";
+  $corpo .= "Telefone: $telefone\n";
   $corpo .= "Mensagem: $mensagem\n";
   
   // Envia o e-mail

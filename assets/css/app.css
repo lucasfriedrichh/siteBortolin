@@ -326,7 +326,17 @@ section {
     .three-col-grid {
         grid-template-columns: repeat(1, 1fr);
     }
-    
+ 
+    .bg-image {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3));
+        background-size: auto;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: #000000;
+        padding: 100px 0;
+      }
+
 }
 
 
