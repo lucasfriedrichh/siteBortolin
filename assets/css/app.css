@@ -246,7 +246,7 @@ section {
 /* Hero */
 #hero {
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/hero-1.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/apertodemao.jpg);
     background-position: center;
     background-size: cover;
     display: grid;
