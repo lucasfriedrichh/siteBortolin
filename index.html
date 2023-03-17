@@ -199,26 +199,58 @@
                     <div class="section-intro">
                         <h1 class="heading-2">Envie uma mensagem</h1>
                     </div>
-                    <form action="enviar_email.php" method="POST">
+                    <form action="enviar_email.php" method="POST" id="contact-form">
                         <div class="form-group">
-                          <input type="text" class="form-input" name="nome" placeholder="Nome">
+                          <input type="text" class="form-input" name="nome" placeholder="Nome" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-input" name="telefone" placeholder="Telefone" data-inputmask="(99) 99999-9999">
-                          </div>
+                          <input type="text" class="form-input" name="telefone" placeholder="Telefone" data-inputmask="(99) 99999-9999" required>
+                        </div>
                         <div class="form-group">
-                          <input type="email" class="form-input" name="email" placeholder="E-mail">
+                          <input type="email" class="form-input" name="email" placeholder="E-mail" required>
                         </div>
                         <div class="form-group">
                           <textarea name="mensagem" rows="6" class="form-input" placeholder="Conte sobre sua empresa: 
-Nome da empresa,
-Faturamento mensal médio,
-Desafio pelo qual a empresa está passando: aumentar vendas, financeiro apertado, processos internos, logística, pouca lucratividade, outro."></textarea>
+    Nome da empresa,
+    Faturamento mensal médio, Desafio pelo qual a empresa está passando: aumentar vendas, financeiro apertado, processos internos, logística, pouca lucratividade, outro." required></textarea>
                         </div>
                         <div class="form-group">
-                          <button type="submit" class="btn">Enviar mensagem</button>
+                          <button type="submit" class="btn" id="submit-btn" disabled>Enviar mensagem</button>
                         </div>
-                    </form>                      
+                      </form>
+                      
+                      <script>
+                        // Obtenha o formulário e o botão de envio
+                        const form = document.getElementById('contact-form');
+                        const submitBtn = document.getElementById('submit-btn');
+                      
+                        // Adicione um ouvinte de eventos para quando o formulário for enviado
+                        form.addEventListener('submit', (event) => {
+                          // Verifique se todos os campos obrigatórios foram preenchidos
+                          if (!form.checkValidity()) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                          }
+                      
+                          // Adicione a classe "was-validated" ao formulário para exibir mensagens de validação
+                          form.classList.add('was-validated');
+                        });
+                      
+                        // Adicione um ouvinte de eventos para cada campo do formulário
+                        form.querySelectorAll('.form-input').forEach((input) => {
+                          input.addEventListener('input', () => {
+                            // Verifique se todos os campos obrigatórios foram preenchidos
+                            if (form.checkValidity()) {
+                              // Ative o botão de envio se todos os campos obrigatórios forem preenchidos
+                              submitBtn.removeAttribute('disabled');
+                            } else {
+                              // Desative o botão de envio se algum campo obrigatório estiver em branco
+                              submitBtn.setAttribute('disabled', true);
+                            }
+                          });
+                        });
+                      </script>
+                                            
                 </div>
             </div>
             <p class="extra_info">TODAS AS SUAS INFORMAÇÕES E AS DO SEU NEGÓCIO SÃO EXTREMAMENTE SIGILOSAS E SÃO MANTIDAS EM SEGURANÇA, PRIORISAMOS O SIGILO CONFORME IMPÕE A ÉTICA PROFISSIONAL!</p>

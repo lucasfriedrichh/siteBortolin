@@ -66,12 +66,13 @@ a:hover {
     max-height: 150px; /* Define a altura máxima da imagem */
     margin-top: -10px; /* Ajusta o posicionamento vertical da imagem */
   }
-  .navbar-brand {
+
+.navbar-brand {
       
       font-size: 10px;
       font-weight: 700;
       color: var(--c-dark);
-  }
+}
 
 img {
     max-width: 100%;
@@ -150,10 +151,6 @@ section {
 
 .nav-links li:not(:last-child) {
     margin-right: 44px;
-}
-
-.nav-links li.active a {
-    box-shadow: 0 2px var(--c-brand);
 }
 
 .nav-links li a, .nav-links a {
@@ -412,6 +409,19 @@ section {
     transform: rotate(15deg) scale(1.5);
   }
     
+
+  section.bg-image p {
+    margin: 0 auto;
+    word-wrap: break-word;
+    font-size: 1vw; /* Define o tamanho da fonte em 3% da largura da tela */
+}
+
+section.bg-image h1 {
+    margin: 0 auto;
+    word-wrap: break-word;
+    font-size: 2vw; /* Define o tamanho da fonte em 3% da largura da tela */
+}
+
 /* Blog */
 #blog {
     background-color: var(--c-light);
@@ -478,7 +488,9 @@ form {
     border: none;
     font-family: var(--f-base);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 10px; /* adicione este estilo */
 }
+
 
 .form-group .form-input:focus {
     outline: none;
@@ -490,6 +502,22 @@ form {
     margin-top: 10px;
   }
   
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  
+.form-group .form-input:focus,
+.form-group .form-input:active {
+    outline: none;
+    border-bottom: 1px solid #ffc107;
+}
+
 
 /* Footer */
 footer {
