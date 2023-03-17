@@ -187,8 +187,9 @@ section {
     transform: translateY(-5px) rotate(-45deg);
 }
 
+/* Mudanças quadno scrolled para baixo */
 .scrolled {
-    background-color: white;
+    background-color: rgb(31, 31, 31);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
@@ -197,7 +198,7 @@ section {
 }
 
 .scrolled .nav-links li a {
-    color: var(--c-dark);
+    color: var(--c-light);
 }
 
 .scrolled .nav-links li a:hover {
@@ -208,7 +209,15 @@ section {
     background-color: var(--c-dark);
 }
 
+
 @media (max-width: 768px) {
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
     .nav-links {
         position: fixed;
         top: var(--n-height);
@@ -238,6 +247,7 @@ section {
     .hamburger {
         display: block;
     }
+
 }
 
 /* Hero */
@@ -254,6 +264,41 @@ section {
 #hero h1 {
     color: white;
 }
+
+
+/* Estilos para telas maiores */
+section.bg-image p {
+    margin: 0 auto;
+    word-wrap: break-word;
+    font-size: 1vw;
+}
+
+/* Estilos para telas médias */
+@media only screen and (min-width: 851px) and (max-width: 1024px) {
+    section.bg-image p {
+    font-size: 2vw;
+    text-align: center;
+    }
+    section.bg-image h1 {
+        font-size: 4vw;
+        text-align: center;
+    }
+}
+
+/* Estilos para telas menores */
+@media only screen and (max-width: 850px) {
+    section.bg-image p {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    section.bg-image h1 {
+        font-size: 6vw;
+        text-align: center;
+    }
+}
+
+
 
 @keyframes scrolltodown {
     0% {
@@ -409,18 +454,14 @@ section {
     transform: rotate(15deg) scale(1.5);
   }
     
-
+/* 
   section.bg-image p {
     margin: 0 auto;
     word-wrap: break-word;
-    font-size: 1vw; /* Define o tamanho da fonte em 3% da largura da tela */
+    font-size: 1vw; Define o tamanho da fonte em 3% da largura da tela 
 }
+ */
 
-section.bg-image h1 {
-    margin: 0 auto;
-    word-wrap: break-word;
-    font-size: 2vw; /* Define o tamanho da fonte em 3% da largura da tela */
-}
 
 /* Blog */
 #blog {
@@ -511,6 +552,7 @@ form {
     padding: 10px;
     margin: 5px 0;
   }
+
   
 .form-group .form-input:focus,
 .form-group .form-input:active {
