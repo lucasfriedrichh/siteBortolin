@@ -29,11 +29,7 @@ navLinksLi.forEach(li => li.addEventListener('click', ()=> {
 
 // Typed js
 var options = {
-    strings: [
-        'Bortolin Consultoria',
-        'Bortolin Consultoria',
-        'Desça pra saber mais'
-    ],
+    strings: [],
     typeSpeed: 0.01,
     loop: true,
     loopCount: Infinity,

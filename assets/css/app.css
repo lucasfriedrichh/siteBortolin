@@ -6,7 +6,7 @@
     --c-brand: #fac562;
     --c-dark: #333;
     --c-body: #666;
-    --c-light: #f8f8f8;
+    --c-light: #ebebeb;
     --f-base: "Plus Jakarta Sans", sans-serif;
     --n-height: 100px;
 }
@@ -154,7 +154,7 @@ section {
 }
 
 .nav-links li a, .nav-links a {
-    color: white;
+    color: rgb(216, 216, 216);
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -261,45 +261,88 @@ section {
     text-align: center;
 }
 
-#hero h1 {
-    color: white;
-}
+#text-switcher {
+    color: #d8d8d8; /* cinza escuro */
+    font-size: 90px;
+  }
 
-
-/* Estilos para telas maiores */
-section.bg-image p {
-    margin: 0 auto;
-    word-wrap: break-word;
-    font-size: 1vw;
-}
-
-/* Estilos para telas médias */
-@media only screen and (min-width: 851px) and (max-width: 1024px) {
-    section.bg-image p {
-    font-size: 2vw;
-    text-align: center;
-    }
-    section.bg-image h1 {
-        font-size: 4vw;
-        text-align: center;
-    }
-}
-
-/* Estilos para telas menores */
-@media only screen and (max-width: 850px) {
-    section.bg-image p {
-        font-size: 4vw;
-        text-align: center;
-    }
-
-    section.bg-image h1 {
-        font-size: 6vw;
-        text-align: center;
+@media only screen and (max-width: 768px) {
+    /* ajusta o tamanho da fonte para telas menores que 768 pixels de largura */
+    #text-switcher {
+        font-size: 7vw; /* ajusta o tamanho da fonte para 5% da largura da tela */
     }
 }
 
 
+/* IMAGE */
+.bg-image h1,
+.bg-image p {
+  color: #fff;
+}
 
+.bg-image {
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(../images/logoBortolin4.png);
+    background-size: auto;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #000000;
+    padding: 10vw 0;
+  }
+  
+  /* Estilos para telas maiores */
+  @media only screen and (min-width: 1024px) {
+    .bg-image {
+      padding: 100px 0;
+    }
+    .bg-image h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .bg-image p {
+      font-size: 24px;
+      line-height: 1.5em;
+    }
+  }
+  
+  /* Estilos para telas médias */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .bg-image h1 {
+      font-size: 4vw;
+      margin-bottom: 2vw;
+    }
+    .bg-image p {
+      font-size: 2vw;
+      line-height: 1.5em;
+    }
+  }
+  
+  /* Estilos para telas menores */
+  @media only screen and (max-width: 767px) {
+    .bg-image {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(../images/logoBortolin4.png);
+        background-size: 200%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: #000000;
+        padding: 10vw 0;
+      }
+    
+    .bg-image h1 {
+      font-size: 6vw;
+      margin-bottom: 2vw;
+      text-align: center;
+    }
+    .bg-image p {
+      font-size: 4vw;
+      line-height: 1.5em;
+      text-align: center;
+    }
+  }
+    
+  /* //Image */
+  
 @keyframes scrolltodown {
     0% {
         transform: translateY(30%);
@@ -369,17 +412,9 @@ section.bg-image p {
         grid-template-columns: repeat(1, 1fr);
     }
  
-    .bg-image {
-        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3));
-        background-size: auto;
-        background-position: right bottom;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-color: #000000;
-        padding: 100px 0;
-      }
-
+    
 }
+
 
 
 /* Service */
@@ -454,47 +489,21 @@ section.bg-image p {
     transform: rotate(15deg) scale(1.5);
   }
     
-/* 
-  section.bg-image p {
-    margin: 0 auto;
-    word-wrap: break-word;
-    font-size: 1vw; Define o tamanho da fonte em 3% da largura da tela 
-}
- */
-
-
-/* Blog */
-#blog {
-    background-color: var(--c-light);
-}
-
-.blog-post h3 {
-    margin-top: 16px;
-}
-
-.bg-image {
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(../images/logoBortolin4.png);
-    background-size: auto;
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: #000000;
-    padding: 100px 0;
-  }
+  @media (max-width: 767px) {
+    .project .overlay {
+        text-align: center;
+      display: flex;
+      opacity: 0.8;
+    }
   
-  .bg-image h1,
-  .bg-image p {
-    color: #fff;
-  }
+    .project .overlay p {
+        text-align: center;
+      opacity: 1;
+    }
   
-  .bg-image h1 {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .bg-image p {
-    font-size: 24px;
+    .project img {
+      transform: rotate(15deg) scale(1.5);
+    }
   }
   
 
